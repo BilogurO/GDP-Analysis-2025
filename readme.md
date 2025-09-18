@@ -17,7 +17,7 @@ The main deliverable is a Power BI report (`GDP.pbix`) with three main dashboard
 
 ---
 
-## 📊 Key features (English)
+## 📊 Key features
 
 **World GDP** — overview, KPIs (total GDP, growth rates), world map and Top 20 countries comparison.
 
@@ -27,7 +27,7 @@ The main deliverable is a Power BI report (`GDP.pbix`) with three main dashboard
 
 ---
 
-## ⚙️ DAX measures and metrics (English)
+## ⚙️ DAX measures and metrics
 
 - **Average Annual Growth** — average % and absolute growth over 2020–2025.
 - **Years of Growth** — count of years with positive GDP growth per country.
@@ -55,6 +55,10 @@ GDP-Analysis-2025/
 ├─ data/                    <- Data and Power BI file(s)
 │     2020-2025.csv
 │     GDP.pbix
+│     Cont.CSV
+│     Динаміка розподілу ВВП.csv
+│     Порівняльний аналіз прогнозу МВФ на 2025 рік за континентами у %.csv
+│     Порівняльний аналіз прогнозу МВФ на 2025 рік за країною у %.csv
 │
 ├─ dashboard/               <- Exported dashboard images (PNG)
 │     world_gdp.png
@@ -65,40 +69,6 @@ GDP-Analysis-2025/
       gdp_forecast.py
 ```
 
-**Notes:**
-- `GDP.pbix` (4.3 MB) is safe to keep in the repo. If you prefer not to store large binary files in Git, use Git LFS.
-- Keep `data/2020-2025.csv` tracked if it’s not sensitive.
-
----
-
-## 🚀 How to use (quick)
-
-1. Open `data/GDP.pbix` in Power BI Desktop.
-2. Inspect visuals on the three pages (World GDP, GDP Dynamics, 2025 Forecast).
-3. If you want to reproduce forecasting locally, open `scripts/gdp_forecast.py` and install dependencies from `requirements.txt`.
-
----
-
-## 🧾 How to upload this README to GitHub (Web UI)
-
-If you prefer to add the file using GitHub web interface (recommended to preserve formatting):
-
-1. Go to your repository page on GitHub: `https://github.com/<your-username>/GDP-Analysis-2025`.
-2. Click **Add file → Upload files**.
-3. Drag and drop the prepared `README.md` (or a ZIP with the whole folder) into the upload area.
-4. In **Commit changes** write: `Add README and initial project files` and click **Commit changes**.
-
-Alternatively, you can click **Add file → Create new file**, name it `README.md` and paste the contents of this file, then commit — but uploading the file directly avoids formatting issues.
-
----
-
-## 📌 Branches & folders note
-
-- Folders on GitHub are *not* the same as branches. Keep the folder structure on the **main** branch for simplicity.
-- Use branches for feature work, not for representing folders. If you already created branches named `scripts`, `dashboard`, `data`, it’s OK, but you can keep everything on `main` until you need collaborative branching.
-
----
-
 ## 📬 Contact / Author
 
 **BilogurO** — author
@@ -107,9 +77,8 @@ Alternatively, you can click **Add file → Create new file**, name it `README.m
 
 ---
 
-# --- УКРАЇНСЬКА ВЕРСІЯ / УКРАЇНСЬКИЙ ТЕКСТ ---
 
-# Проєкт: Аналіз та прогноз ВВП (2020–2025)
+# РЕТ-Проєкт: Аналіз та прогноз ВВП (2020–2025)
 
 **Інтерактивний дашборд Power BI + прогнозування на Python**
 
@@ -128,7 +97,7 @@ Alternatively, you can click **Add file → Create new file**, name it `README.m
 
 ---
 
-## 📊 Ключові сторінки дашборду (укр.)
+## 📊 Ключові сторінки дашборду
 
 **ВВП країн світу** — огляд, KPI (сукупний ВВП, темпи зростання), карта та порівняння топ-20 країн.
 
@@ -144,7 +113,7 @@ Alternatively, you can click **Add file → Create new file**, name it `README.m
 
 ---
 
-## 📂 Структура репозиторію (укр.)
+## 📂 Структура репозиторію
 
 ```
 GDP-Analysis-2025/
@@ -155,6 +124,10 @@ GDP-Analysis-2025/
 ├─ data/                    <- Дані та файл Power BI
 │     2020-2025.csv
 │     GDP.pbix
+│     Cont.CSV
+│     Динаміка розподілу ВВП.csv
+│     Порівняльний аналіз прогнозу МВФ на 2025 рік за континентами у %.csv
+│     Порівняльний аналіз прогнозу МВФ на 2025 рік за країною у %.csv
 │
 ├─ dashboard/               <- Збережені зображення дашбордів (PNG)
 │     world_gdp.png
@@ -165,30 +138,8 @@ GDP-Analysis-2025/
       gdp_forecast.py
 ```
 
----
-
-## 🚀 Як користуватися (коротко)
-
-1. Відкрий `data/GDP.pbix` у Power BI Desktop.
-2. Переглянь сторінки дашборду: World GDP, GDP Dynamics, 2025 Forecast.
-3. Для відтворення прогнозу локально — відкрий `scripts/gdp_forecast.py` та встанови залежності з `requirements.txt`.
-
----
-
-## 📌 Примітка щодо .gitignore і `.pbix`
-
-- `GDP.pbix` (4.3 MB) можна тримати у репозиторії. Якщо хочеш уникнути зберігання бінарних великих файлів у Git — використай Git LFS.
-- Якщо `README.md` в минулому ламався при вставці — завантаж його як файл через **Upload files** у GitHub (це збереже форматування).
-
----
-
 ## 📬 Контакти
 
 - Email: **biloguroleksij@gmail.com**
 - LinkedIn: https://www.linkedin.com/in/oleksij-bilohur
-
-
----
-
-*README.md згенеровано для репозиторію **GDP-Analysis-2025**. Якщо треба — можу підготувати ZIP-архів із файлами-заглушками для швидкого завантаження через веб-інтерфейс GitHub.*
 
